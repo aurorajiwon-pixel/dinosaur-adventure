@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>중생대의 환경과 생물</title>
+<style>
+:root{--bg:#10231f;--sf:#173630;--tx:#f1ecd8;--ac:#e9b44c;--g:#6fbf73;--b:#4aa3c7;--r:#d9604c;font-family:"Noto Sans KR",sans-serif}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--tx);line-height:1.6}
+section{max-width:960px;margin:0 auto;padding:44px 18px;border-bottom:1px solid #ffffff22}
+h1{font-size:clamp(30px,6vw,56px);margin:0}h2{font-size:24px;margin:0 0 6px;color:var(--ac)}
+p{margin:6px 0;max-width:60ch}svg{width:100%;height:auto;display:block;background:var(--sf);border-radius:10px}
+button{background:var(--ac);border:0;border-radius:20px;padding:8px 16px;font:inherit;font-weight:700;cursor:pointer;margin:6px 6px 6px 0}
+.row{display:flex;gap:14px;flex-wrap:wrap}.row>*{flex:1 1 260px}
+.pop,[data-t]{cursor:pointer}
+#tip{position:fixed;pointer-events:none;background:#000d;color:#fff;padding:3px 9px;border-radius:6px;font-size:14px;display:none;z-index:9}
+#mod{position:fixed;inset:0;background:#000b;display:none;place-items:center;z-index:8;padding:16px}
+#mod div{background:var(--tx);color:#10231f;padding:24px;border-radius:14px;max-width:460px;animation:z .3s}
+@keyframes z{from{transform:scale(.5);opacity:0}}
+@keyframes sw{50%{transform:translate(30px,-12px)}}@keyframes wk{50%{transform:translate(40px,0)}}
+@keyframes dr{to{stroke-dashoffset:0}}@keyframes fl{to{transform:translate(120px,-90px)}}
+@keyframes mt{to{transform:translate(-330px,330px)}}@keyframes fu{50%{transform:translateY(-14px)}}
+.sw{animation:sw 4s infinite}.wk{animation:wk 3s infinite alternate}.fu{animation:fu 2s infinite}
+.ln{stroke-dasharray:900;stroke-dashoffset:900;animation:dr 4s forwards}
+.m{animation:mt 3s infinite}
+#lau,#gon{transition:transform 2s}
+.cmp{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.cap{font-size:15px;color:#d8e3c8}
+footer{text-align:center;padding:30px;font-size:15px}
+@media(prefers-reduced-motion:reduce){*{animation:none!important}.ln{stroke-dashoffset:0}}
+</style></head><body>
+<svg width="0" height="0" style="position:absolute"><defs>
+<symbol id="amm" viewBox="0 0 100 100"><path d="M52 52C52 44 42 44 40 52C38 62 52 68 62 60C74 50 66 32 50 32C30 32 20 52 28 68C38 88 66 88 80 72" fill="none" stroke="#c98d4f" stroke-width="9" stroke-linecap="round"/><path d="M80 72q10-4 14 6M80 72q4 10 14 6" stroke="#c98d4f" stroke-width="4" fill="none"/><path d="M30 40l8 6M24 56l10 2M32 76l8-8M52 84l2-10M70 84l-2-10" stroke="#7a4a20" stroke-width="2"/></symbol>
+<symbol id="rex" viewBox="0 0 140 110"><path d="M6 72L40 56Q58 20 92 30L124 28Q136 32 132 44L102 48L110 56L92 60Q88 80 82 102L70 102L72 84L56 86L54 102L42 102L44 78L20 78Z" fill="#7b9a52"/><path d="M92 60l-10 8 6 4z" fill="#5d7a3c"/><circle cx="108" cy="36" r="3" fill="#fff"/><path d="M104 46l4 4 4-4 4 4" stroke="#fff" fill="none"/></symbol>
+<symbol id="gk" viewBox="0 0 100 100"><path d="M50 92V62M50 62C8 62 4 20 24 12L40 26L50 8L60 26L76 12C96 20 92 62 50 62Z" fill="#a8d45a" stroke="#6d9a2f" stroke-width="2"/><path d="M50 62L24 24M50 62L50 20M50 62L76 24" stroke="#6d9a2f"/></symbol>
+<symbol id="fn" viewBox="0 0 100 100"><path d="M50 98Q46 50 70 6" stroke="#3f8f4a" stroke-width="3" fill="none"/><path d="M48 90l-22-8M48 76l-24-10M50 62l-22-10M54 48l-18-10M58 34l-16-8M50 90l22-8M52 76l24-10M54 62l22-10M58 48l18-10M62 34l14-8" stroke="#52b061" stroke-width="5" stroke-linecap="round"/></symbol>
+<symbol id="cr" viewBox="0 0 100 100"><path d="M50 98V60M50 70L26 40M50 60L74 30M26 40L20 18M26 40L40 22M74 30L68 10M74 30L90 18M50 80L80 62" stroke="#ef7d6a" stroke-width="7" stroke-linecap="round" fill="none"/></symbol>
+</defs></svg>
+
+<section><h1>중생대의 환경과 생물</h1><p class="cap">그림을 누르면 설명이 뜨고, 마우스를 올리면 이름이 보여요.</p>
+<svg viewBox="0 0 800 260"><path d="M0 170Q200 150 400 175T800 160V260H0Z" fill="#2c6a52"/><path d="M0 215Q200 200 400 220T800 210V260H0Z" fill="#1d5a7a"/>
+<g class="wk" data-t="티라노사우루스"><use href="#rex" x="120" y="60" width="150" height="120"/></g>
+<g class="sw" data-t="암모나이트"><use href="#amm" x="480" y="190" width="60" height="60"/></g>
+<use href="#gk" x="640" y="70" width="90" height="100" data-t="은행나무"/></svg></section>
+
+<section><h2>① 시대 구분</h2>
+<p>약 2억4700만 년 전 ~ 6500만 년 전, 2억 년 정도의 시대. 전체 지질시대의 약 4%가 조금 넘는다.</p>
+<p>'페름기 말 대멸종'을 기점으로 고생대가 끝나고 중생대가 시작.</p>
+<div class="row"><svg viewBox="0 0 400 110"><rect x="10" y="40" width="250" height="30" fill="#556" data-t="선캄브리아 시대"/><rect x="260" y="40" width="60" height="30" fill="#789" data-t="고생대"/><rect x="320" y="40" width="26" height="30" fill="var(--ac)" data-t="중생대"><animate attributeName="opacity" values="1;.3;1" dur="1.5s" repeatCount="indefinite"/></rect><rect x="346" y="40" width="44" height="30" fill="#789" data-t="신생대"/><text x="300" y="30" fill="#e9b44c" font-size="14">중생대 ▼</text><text x="10" y="95" fill="#fff" font-size="11">가로 띠 연표(길이는 개략도)</text></svg>
+<svg viewBox="0 0 200 200"><path d="M100 100L118.7 32.6A70 70 0 1 1 100 30Z" fill="#556"/><path class="fu" d="M100 100L100 30A70 70 0 0 1 118.7 32.6Z" transform="translate(1.6,-12)" fill="var(--ac)" data-t="중생대 약 4%"/><text x="30" y="108" fill="#fff" font-size="12">전체 지질시대</text></svg></div></section>
+
+<section><h2>② 기후</h2><p>대체적으로 온난함. 빙하기는 없다.</p>
+<svg viewBox="0 0 400 140"><path d="M20 120V20M20 120H390" stroke="#fff6"/><polyline class="ln" points="20,70 80,55 140,65 200,45 260,55 320,40 385,60" fill="none" stroke="var(--r)" stroke-width="4"/><text x="250" y="130" fill="#fff" font-size="11">기온 변화(개략도) · 빙하기 없음</text></svg></section>
+
+<section><h2>③ 대기·해양 환경</h2>
+<button onclick="gas(0)">산소</button><button onclick="gas(1)">이산화 탄소</button><button onclick="gas(2)">바다</button>
+<svg id="gs" viewBox="0 0 400 150"></svg><p class="cap" id="gt"></p></section>
+
+<section><h2>④ 수륙 분포</h2>
+<button onclick="mv(0)">합치기</button><button onclick="mv(1)">갈라지기</button>
+<svg viewBox="0 0 400 180"><rect y="70" width="400" height="40" fill="#2a6f90" opacity=".6"/><text x="165" y="95" fill="#fff" font-size="12" opacity=".8">테티스해</text>
+<path id="lau" class="pop" data-t="로라시아(북)" data-h="로라시아" data-b="북쪽 대륙. 판게아가 중생대 초부터 분리되며 생김." d="M130 20Q200 0 270 25Q280 60 230 75Q170 85 130 60Z" fill="#7aa65a" style="transform:translate(0,38px)"/>
+<path id="gon" class="pop" data-t="곤드와나(남)" data-h="곤드와나" data-b="남쪽 대륙. 대륙 사이로 바닷물이 들어와 대서양·인도양이 새로 생겼다." d="M120 110Q200 100 280 115Q290 160 220 172Q150 175 120 140Z" fill="#c9a35a" style="transform:translate(0,-38px)"/></svg>
+<p class="cap">판게아가 로라시아와 곤드와나로 갈라졌고, 대서양과 인도양이 새로 생기고 테티스해가 형성되었다. 해안선의 길이가 대폭 늘어났다.</p>
+<p class="cap">분리 과정에서 전 지구적 화산 활동이 활발했다. 후기에는 판의 수렴으로 록키·안데스 산맥의 초기 조산 운동이 진행되었다.</p></section>
+
+<section><h2>⑤ 대표 동물</h2><p class="cap">카드를 눌러 보세요.</p>
+<div class="row"><svg viewBox="0 0 260 180" class="pop" data-h="암모나이트 · 해양 생물" data-b="나선형의 단단한 껍데기, 두족류. 먹이인 미세 플랑크톤이 지구 역사상 가장 폭발적으로 진화하고 증가해 번성했다." data-t="암모나이트"><rect width="260" height="180" fill="#1d5a7a"/><g class="sw"><use href="#amm" x="50" y="50" width="100" height="100"/></g></svg>
+<svg viewBox="0 0 260 180" class="pop" data-h="티라노사우루스 · 육상 생물" data-b="강력한 치악력, 짧은 앞발. 번성 이유: 강력한 치악력, 입체시와 후각 등 신체 진화, 성장 단계별로 생태적 지위를 달리해 먹이 경쟁을 피한 생존 전략." data-t="티라노사우루스"><rect width="260" height="180" fill="#2c6a52"/><g class="wk"><use href="#rex" x="30" y="30" width="140" height="120"/></g></svg></div></section>
+
+<section><h2>⑥ 대표 식물</h2>
+<svg viewBox="0 0 500 200"><rect y="150" width="500" height="50" fill="#5a4a2a"/>
+<use href="#fn" x="40" y="80" width="70" height="80" class="pop" data-t="고사리(고생대 양치식물)" data-h="양치식물" data-b="고생대의 양치식물은 번식을 위해 반드시 물이 필요했다."/>
+<use href="#gk" x="190" y="20" width="130" height="140" class="pop fu" data-t="은행나무" data-h="은행나무(겉씨식물)" data-b="끝이 두 갈래로 갈라진 부채꼴 잎, 수분을 통한 번식."/>
+<use href="#gk" x="360" y="50" width="100" height="110" data-t="은행나무"/></svg>
+<p class="cap">겉씨식물은 씨앗(종자)과 꽃가루를 발명해 물이 없는 건조한 육지 한복판에서도 번식할 수 있다.</p></section>
+
+<section><h2>⑦ 표준화석</h2><p>암모나이트: 중생대 바다에 살았던 대표적인 연체동물 화석. 지층이 만들어진 시대를 알 수 있다.</p>
+<div class="row"><svg viewBox="0 0 200 200"><circle cx="100" cy="100" r="90" fill="#6b5a45"/><use href="#amm" x="30" y="30" width="140" height="140" data-t="암모나이트 화석"/></svg>
+<svg viewBox="0 0 300 200"><g fill="#fff" font-size="13"><text x="10" y="40">⏱ 생존 기간이 짧다</text><text x="10" y="90">🌍 분포 범위가 넓다</text><text x="10" y="140">🐚 개체 수가 많다</text><text x="10" y="190">🌡 환경 변화에 민감하다</text></g></svg></div></section>
+
+<section><h2>⑧ 시대 말 사건 · K-Pg 대멸종</h2>
+<svg viewBox="0 0 500 220"><rect width="500" height="220" fill="#3a2a40"/><path d="M0 200H500V220H0Z" fill="#5a4a2a"/><path d="M360 200L400 120L440 200Z" fill="#6b3a2a" class="pop" data-t="화산 활동(데칸 트랩)" data-h="데칸 트랩" data-b="인도 지역의 대규모 화산 활동이 화산재와 온실기체를 방출해 기후 변화와 생태계에 영향을 주었을 가능성."/><circle cx="400" cy="100" r="12" fill="#888" class="fu"/>
+<g class="m"><circle cx="440" cy="-10" r="14" fill="var(--r)" class="pop" data-t="소행성" data-h="소행성 충돌" data-b="약 6,600만 년 전 멕시코 유카탄반도 부근에 충돌. 먼지와 기체가 햇빛을 차단하고 기후가 급변해 식물이 감소, 먹이사슬이 붕괴했다."/></g></svg>
+<p class="cap">약 6,600만 년 전 백악기와 고제3기 사이. 비조류 공룡 등이 멸종하고 이후 포유류가 번성, 신생대 생태계가 발달했다.</p>
+<p class="cap">원인: 소행성 충돌(가장 유력), 대규모 화산 활동, 급격한 기후 변화.</p></section>
+
+<section><h2>⑨ 시상화석과 환경 추론</h2><p class="cap">화석을 눌러 당시 환경을 보세요.</p>
+<svg id="env" viewBox="0 0 500 200"><rect id="bg" width="500" height="200" fill="#10231f"/>
+<use href="#fn" x="40" y="60" width="90" height="100" class="pop" onclick="ev(0)" data-t="고사리 화석"/><use href="#cr" x="190" y="60" width="90" height="100" onclick="ev(1)" data-t="산호 화석" style="cursor:pointer"/><use href="#gk" x="350" y="60" width="90" height="100" onclick="ev(2)" data-t="은행나무 화석" style="cursor:pointer"/><text id="et" x="20" y="30" fill="#fff" font-size="14">화석을 누르세요</text></svg>
+<p class="cap">시상화석은 특정 환경에서 산 생물의 화석으로, 적응 범위가 좁아 당시 기후·환경을 알려준다. 표준화석보다 생존 기간이 길고 분포 면적이 좁아야 한다.</p></section>
+
+<section><h2>⑩ 환경 변화와 생물 변화</h2>
+<div class="cmp"><svg viewBox="0 0 200 150"><rect width="200" height="150" fill="#2c6a52"/><use href="#gk" x="20" y="30" width="60" height="70"/><use href="#rex" x="90" y="40" width="90" height="70" class="wk"/><text x="10" y="20" fill="#fff" font-size="11">초: 판게아 분리·온난</text></svg>
+<svg viewBox="0 0 200 150"><rect width="200" height="150" fill="#4a2a30"/><circle cx="100" cy="40" r="12" fill="var(--r)" class="fu"/><path d="M60 140l20-40 20 40z" fill="#6b3a2a"/><text x="10" y="20" fill="#fff" font-size="11">말: 충돌·화산·급변</text></svg></div>
+<p class="cap">초: 해안선이 길어지고 기후가 온난해져 생물 다양성이 급증. 말: 소행성 충돌과 화산 활동으로 기후가 급변해 대멸종 발생.</p></section>
+
+<footer>4반 4모둠 · 최서우, 이지용, 남인호, 한태율, 이병은</footer>
+<div id="tip"></div><div id="mod" onclick="this.style.display='none'"><div><h3 id="mh"></h3><p id="mb"></p></div></div>
+<script>
+const T=document.getElementById('tip');
+document.addEventListener('mousemove',e=>{const t=e.target.closest('[data-t]');T.style.display=t?'block':'none';if(t){T.textContent=t.dataset.t;T.style.left=e.clientX+12+'px';T.style.top=e.clientY+12+'px'}});
+document.addEventListener('click',e=>{const p=e.target.closest('.pop[data-h]');if(p){mh.textContent=p.dataset.h;mb.textContent=p.dataset.b;mod.style.display='grid'}});
+const G=[["산소 O₂",'#6fd0ff',"고생대 말에 낮아졌던 산소 농도는 중생대 내내 증가. 겉씨식물의 번성과 광합성 덕분이며, 중생대 말엔 현재와 비슷하거나 다소 높았다.",10],
+["이산화 탄소 CO₂",'#e9b44c',"현재보다 훨씬 높았다. 활발한 지각 변동으로 배출된 CO₂의 온실효과로 기온이 매우 높고 빙하기가 없었다.",28],
+["바다",'#4aa3c7',"극지방 빙하가 거의 없고 해령이 발달해 해수면이 매우 높았다. 수온이 높고 얕은 바다가 넓어 암모나이트와 해양 파충류가 번성했다.",18]];
+let tm;function gas(i){const g=G[i],s=document.getElementById('gs');gt.textContent=g[2];clearInterval(tm);
+const N=g[3];s.innerHTML=Array.from({length:N},(_,k)=>`<circle r="6" fill="${g[1]}" cx="${Math.random()*400}" cy="${Math.random()*150}" data-t="${g[0]}"/>`).join('');
+const c=[...s.children].map(x=>[+x.getAttribute('cx'),+x.getAttribute('cy'),Math.random()*2-1,Math.random()*2-1]);
+tm=setInterval(()=>{c.forEach((m,k)=>{m[0]=(m[0]+m[2]+400)%400;m[1]=(m[1]+m[3]+150)%150;s.children[k].setAttribute('cx',m[0]);s.children[k].setAttribute('cy',m[1])})},30)}gas(0);
+function mv(a){lau.style.transform=a?'translate(0,-20px)':'translate(0,38px)';gon.style.transform=a?'translate(0,40px)':'translate(0,-38px)'}
+function ev(i){const d=[["#2f5a2a","따뜻하고 습한 육지 환경 (고사리)"],["#1d5a7a","따뜻하고 얕은 바다 환경 (산호)"],["#3d6a2a","따뜻하고 습한 육지 환경 (은행나무)"]][i];bg.setAttribute('fill',d[0]);et.textContent=d[1]}
+</script></body></html>
